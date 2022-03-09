@@ -9,6 +9,16 @@
 
 function prettySum(arr) {
     // code here
+    let res = 0;
+    for(let i = 0; i < arr.length; i++){
+        if(i % 2 == 0 & i != arr.length){
+            res +=arr[i];
+        }
+        if(i == arr.length - 1){
+            res *= arr[i];
+        }
+    }
+    return res;
 }
 
 module.exports = prettySum;
