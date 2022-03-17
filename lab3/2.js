@@ -9,6 +9,23 @@
  */
 function getMinMax(str) {
     // code here
+    let MinMax = {min: Number.MAX_SAFE_INTEGER, max: Number.MIN_SAFE_INTEGER};
+    let number = '';
+    for(let i = 0; i < str.length; i++){
+        if (+str[i] || str[i] == '-' || str[i] == '.'){
+            number = number + str[i];
+        }
+        else{
+            if (+number < MinMax.min){
+                MinMax.min = +number;
+            }
+            if (+number > MinMax.max){
+                MinMax.max = +number;
+            }
+            number = '';
+        }
+    }
+    return MinMax;
 }
 
 module.exports = getMinMax;
