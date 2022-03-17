@@ -18,6 +18,19 @@
 
 function get1DArray(arr) {
     //code here
+    let temp
+    let tempArr = Array()
+    for (let i = 0; i < arr.length; i++) {
+        if (typeof arr[i] == 'object') {
+            temp = get1DArray(arr[i])
+            for (let j = 0; j < temp.length; j++) {
+                tempArr.push(temp[j])
+            }
+        } else {
+            tempArr.push(arr[i])
+        }
+    }
+    return tempArr
 }
 
 module.exports = get1DArray;
