@@ -14,6 +14,13 @@
  */
 function curry(f) {
     //code here
+    return function foo(...args) {
+        return args.length >= f.length
+            ? f(...args)
+            : (...moreArgs) => {
+                  return foo(...args.concat(moreArgs));
+              };
+    };
 }
 
 module.exports = curry;

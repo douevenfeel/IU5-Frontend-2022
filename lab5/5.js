@@ -23,6 +23,27 @@
 
 function makeRoute(arr) {
     //code here
+    let sortedArr = [];
+    arr.forEach((element) => {
+        let checking = false;
+        for (arg of arr) {
+            if (arg.to == element.from) {
+                checking = true;
+            }
+        }
+        checking == false && sortedArr.push(element);
+    });
+    for (let i = 0; i < arr.length; i++) {
+        let nextArg;
+        for (element of arr) {
+            if (element.from == sortedArr[sortedArr.length - 1].to) {
+                nextArg = element;
+                break;
+            }
+        }
+        nextArg !== undefined && sortedArr.push(nextArg);
+    }
+    return sortedArr;
 }
 
 module.exports = makeRoute;
