@@ -1,0 +1,89 @@
+body,
+.block,
+#first-task,
+#second-task,
+#fourth-task {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body {
+    background: linear-gradient(90deg, #aea4e3, #d3ffe8);
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+}
+#first-task,
+#second-task,
+#third-task,
+#fourth-task {
+    margin: 24px;
+    border: 1px solid black;
+    border-radius: 16px;
+}
+#first-task,
+#second-task {
+    width: 240px;
+    height: 240px;
+}
+#first-task {
+    background: #fff;
+}
+#second-task {
+    background: transparent;
+}
+#third-task {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 760px;
+    padding: 8px;
+}
+#list::-webkit-scrollbar {
+    width: 4px;
+}
+#list::-webkit-scrollbar-track {
+    position: relative;
+    background: transparent;
+    margin: 2px;
+}
+#list::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+.hidden {
+    overflow: hidden;
+    max-height: 0px;
+    transition: 1.2s;
+}
+.visible {
+    margin-top: 8px;
+    overflow: auto;
+    max-height: 208px;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 8px;
+    transition: 1.2s;
+}
+.list {
+    margin: 4px;
+}
+#fourth-task {
+    padding: 0px;
+    width: 800px;
+    height: 800px;
+    position: relative;
+}
+#circle {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 16px;
+}
