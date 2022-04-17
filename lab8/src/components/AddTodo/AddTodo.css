@@ -1,0 +1,34 @@
+.todoForm {
+    display: inherit;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    max-width: inherit;
+    box-sizing: border-box;
+    width: inherit;
+    padding: 12px;
+    margin: 12px;
+}
+.todoInput {
+    border-radius: 16px;
+    border: none;
+    background-color: #aaa;
+    padding: 12px;
+    box-sizing: border-box;
+    height: 32px;
+    max-width: 360px;
+    width: 60vw;
+    color: #333;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.todoInput:hover,
+.addTodo:hover {
+    background-color: #bbb;
+    cursor: pointer;
+}
+.todoInput:focus,
+.addTodo:focus {
+    outline: none;
+    background-color: #ccc;
+}

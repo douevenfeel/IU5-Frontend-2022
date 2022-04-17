@@ -1,0 +1,43 @@
+.todo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 480px;
+    width: 92vw;
+    margin: 8px 0;
+}
+.checker {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid red;
+}
+.checker.done {
+    border: 2px solid green;
+}
+.todoText {
+    border-radius: 16px;
+    border: none;
+    background-color: #aaa;
+    padding: 12px;
+    box-sizing: border-box;
+    height: 32px;
+    max-width: 360px;
+    width: 68vw;
+    color: #333;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.todoText.done {
+    text-decoration: line-through 1px green;
+    background-color: #bbb;
+    box-shadow: 1px 2px 4px rgba(0, 128, 0, 0.4);
+}
+
+.todoText:hover {
+    background-color: #bbb;
+    cursor: pointer;
+}
+.todoText:focus {
+    outline: none;
+    background-color: #ccc;
+}
