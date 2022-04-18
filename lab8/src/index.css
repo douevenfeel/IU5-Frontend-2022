@@ -1,13 +1,63 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html::-webkit-scrollbar {
+    display: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #ccc;
+    min-height: 100vh;
+    scrollbar-width: 0px;
+    background-color: #222;
+}
+
+@media screen and (max-width: 576px) {
+    body {
+        min-height: 0px;
+    }
+}
+
+* {
+    font-family: "Poppins";
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    font-size: 1em;
+}
+
+.addTodo,
+.deleteButton {
+    height: 32px;
+    width: 32px;
+    border: none;
+    border-radius: 50%;
+    background-color: #aaa;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
+    padding: 4px;
+    margin: 0px;
+}
+
+.addTodo svg,
+.deleteButton svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    columns: #222;
+    width: 24px;
+    height: 24px;
+    box-sizing: border-box;
+}
+
+.addTodo:hover,
+.deleteButton:hover {
+    background-color: #bbb;
+    cursor: pointer;
+}
+
+.addTodo:focus,
+.deleteButton:focus {
+    outline: none;
+    background-color: #ccc;
 }
