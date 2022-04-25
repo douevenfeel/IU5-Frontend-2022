@@ -1,0 +1,132 @@
+@media screen and (max-width: 1280px) {
+    header {
+        max-width: 100%;
+    }
+    nav {
+        max-width: 100%;
+    }
+    .main-first {
+        margin: 0px;
+    }
+    .main-first .cards {
+        flex-direction: column;
+        width: auto;
+        height: 100%;
+    }
+    .main-first .cards .card-1,
+    .main-first .cards .card-2,
+    .main-first .cards .card-3 {
+        margin: 16px;
+    }
+}
+@media screen and (max-width: 1084px) {
+    .section-header {
+        max-width: 100%;
+    }
+    .dashboard {
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .main-second {
+        padding: 0px 0px;
+    }
+    .article-second {
+        flex-direction: column;
+    }
+    .second-text {
+        max-height: 100%;
+        order: 1;
+    }
+    .article-second img {
+        max-width: 500px;
+        width: 100%;
+        height: auto;
+        order: 0;
+    }
+    .second-text h3 {
+        margin: 10px;
+    }
+    .second-text .buttons {
+        width: calc(100% - 8px);
+        justify-content: space-around;
+    }
+    .second-text .buttons .sign-up-for-free {
+        margin: 0px 12px 0px 0px;
+    }
+}
+@media screen and (max-width: 720px) {
+    nav {
+        height: 80px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .section-header .text h1 {
+        font-size: 48px;
+        line-height: 56px;
+        font-weight: 700;
+    }
+    .menu {
+        visibility: hidden;
+        position: absolute;
+    }
+    .hidden-menu {
+        visibility: visible;
+        position: relative;
+    }
+    .sign-up {
+        width: 120px;
+    }
+    .second-text h2 {
+        /* width: ; */
+        margin: 0px;
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 494px) {
+    .section-header .text h1 {
+        font-size: 44px;
+        line-height: 52px;
+    }
+}
+@media screen and (max-width: 464px) {
+    .section-header .text h1 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+}
+@media screen and (max-width: 408px) {
+    .section-header .text h1 {
+        font-size: 36px;
+        line-height: 44px;
+    }
+    .section-header .buttons {
+        flex-direction: column;
+        width: 240px;
+    }
+    .get-started {
+        margin-bottom: 16px;
+        width: 240px;
+        padding: 20px 73px;
+    }
+    .try-for-free {
+        width: 240px;
+        padding: 20px 76px;
+    }
+    .main-first .cards .card-1,
+    .main-first .cards .card-2,
+    .main-first .cards .card-3 {
+        padding: 20px 24px 0px 24px;
+        margin: 16px;
+    }
+    .main-first .cards .card-1 h2,
+    .main-first .cards .card-2 h2,
+    .main-first .cards .card-3 h2 {
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 368px) {
+    .section-header .text h1 {
+        font-size: 32px;
+    }
+}
